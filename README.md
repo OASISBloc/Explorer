@@ -1,6 +1,6 @@
 # OASISBloc Explorer
 
-OSB Explorer is based on [EOS Tracker](https://github.com/EOSEssentials/EOSTracker.gif).
+OSB Explorer is based on Angular4
 
 # Getting Started
 
