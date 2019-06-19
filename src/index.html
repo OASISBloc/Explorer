@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="OASISBloc explorer">
+  <meta name="author" content="Cesar Rodriguez">
+
+  <title>OASISBloc explorer</title>
+
+  <base href="/">
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="src/favicon.ico" type="image/x-icon">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+</head>
+
+<body>
+  <app-root></app-root>
+
+  <!-- pre-zone polyfills -->
+  <script src="node_modules/core-js/client/shim.min.js"></script>
+  <script src="node_modules/web-animations-js/web-animations.min.js"></script>
+  <script src="node_modules/classlist.js/classList.min.js"></script>
+
+
+  <!-- zone.js required by Angular -->
+  <!-- application polyfills -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="//www.googletagmanager.com/gtag/js?id=UA-138322-51"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-138322-51');
+
+    /**
+     * you can configure some zone flags which can disable zone interception for some
+     * asynchronous activities to improve startup performance - use these options only
+     * if you know what you are doing as it could result in hard to trace down bugs..
+     */
+    __Zone_disable_requestAnimationFrame = true; // disable patch requestAnimationFrame
+    __Zone_disable_on_property = true; // disable patch onProperty such as onclick
+    __zone_symbol__BLACK_LISTED_EVENTS = ['scroll', 'mousemove']; // disable patch specified eventNames
+
+    /*
+     * in IE/Edge developer tools, the addEventListener will also be wrapped by zone.js
+     * with the following flag, it will bypass `zone.js` patch for IE/Edge
+     */
+    __Zone_enable_cross_context_check = true;
+
+  </script>
+  <script src="node_modules/zone.js/dist/zone.js"></script>
+</body>
+
+</html>

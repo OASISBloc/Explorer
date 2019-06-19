@@ -1,0 +1,29 @@
+<app-header class="mat-elevation-z4" (onMenuToggle)="sidenav"></app-header>
+<mat-sidenav-container>
+  <!--<mat-sidenav #sidenav [mode]="sidenavMode$ | async" [opened]="sidenavOpen$ | async" autoFocus="false" fixedInViewport="true"
+    fixedTopGap="50" class="mat-elevation-z4">
+    <app-sidenav></app-sidenav>
+  </mat-sidenav>-->
+  <mat-sidenav-content fxLayout="column">
+    <nav>
+      <ul fxLayout="row" fxLayoutAlign="start center">
+        <li fxFlex>
+          <a [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Dashboard</a>
+        </li>
+        <!-- 활성화 class = " active " -->
+        <li fxFlex>
+          <a [routerLink]="['/blocks']" routerLinkActive="active">Blocks</a>
+        </li>
+        <li fxFlex>
+          <a [routerLink]="['/transactions']" routerLinkActive="active">Transactions</a>
+        </li>
+        <li fxFlex>
+          <!-- 동적으로 url 바뀌어야 한다.  -->
+          <a href="http://172.16.1.13:3000" target="_blank" routerLinkActive="active">Wallet</a>
+        </li>
+      </ul>
+    </nav>
+
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
