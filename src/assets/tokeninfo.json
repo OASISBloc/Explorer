@@ -1,7 +1,23 @@
 [{
-  "name": "osbtoken",
+  "name": "osb.token",
   "logo": "/assets/oasisblog_logo_.png",
   "logo_lg": "/assets/oasisblog_logo_.png",
   "symbol": "OSB",
-  "account": "osb.token"
+  "account": "osbio.token"
+},
+{
+  "name": "osb.token",
+  "logo": "/assets/symbol_sosb.png",
+  "logo_lg": "/assets/symbol_sosb.png",
+  "symbol": "SOSB",
+  "account": "osbio.token"
+},
+{
+  "name": "osb.token",
+  "logo": "/assets/symbol_cra.png",
+  "logo_lg": "/assets/symbol_cra.png",
+  "symbol": "CRA",
+  "account": "osbio.token"
 }]
+
+
