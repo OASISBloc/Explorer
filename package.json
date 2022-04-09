@@ -39,7 +39,7 @@
     "eosjs": "^16.0.9",
     "express": "^4.16.4",
     "intl": "^1.2.5",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "ngx-json-viewer": "^2.4.0",
     "ngx-moment": "^3.4.0",
     "ngx-webstorage": "^2.0.1",
